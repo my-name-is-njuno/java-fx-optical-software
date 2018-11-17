@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Addpatientcontroller">
+   <children>
+      <GridPane alignment="CENTER" layoutX="6.0" layoutY="46.0" prefHeight="185.0" prefWidth="458.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="name" focusTraversable="false" labelFloat="true" promptText="Patient Name" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="contact" focusTraversable="false" labelFloat="true" promptText="Phone / Mobile No." GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="adress" focusTraversable="false" labelFloat="true" promptText="From" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="email" focusTraversable="false" labelFloat="true" promptText="Email Address" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </JFXTextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Info">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dob" focusTraversable="false" prefHeight="25.0" prefWidth="233.0" promptText="Date of Birth" style="-fx-border-top-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </DatePicker>
+         </children>
+      </GridPane>
+      <VBox fx:id="header" alignment="CENTER" layoutY="-99.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: green;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/Trek%20Insignia/TMP%20Medical.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e8e6e6" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new Patient Not Under Insurance">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="497.0" prefHeight="38.0" prefWidth="458.0" style="-fx-background-color: #ccc;" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <JFXButton fx:id="save" focusTraversable="false" onAction="#savePatient" prefHeight="31.0" prefWidth="136.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Save Patient">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancel" focusTraversable="false" layoutX="83.0" layoutY="13.0" onAction="#cancelOperation" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Cancel">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

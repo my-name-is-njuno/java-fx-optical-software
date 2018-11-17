@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="root" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Mainwindowcontroller">
+   <top>
+      <VBox fx:id="header" alignment="CENTER" prefHeight="107.0" prefWidth="600.0" style="-fx-background-color: #201;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/Trek%20Insignia/TMP%20Medical.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" maxHeight="10000.0" maxWidth="10000.0" prefHeight="418.0" prefWidth="681.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" maxHeight="1000.0" maxWidth="10000.0" prefHeight="135.0" prefWidth="600.0">
+               <children>
+                  <JFXButton fx:id="doctors" contentDisplay="TOP" onAction="#loadDoctorsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Doctors">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/EMOTICONS/popo_emotions_full_version%20rap.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="drugs" contentDisplay="TOP" layoutX="210.0" layoutY="11.0" onAction="#loadDrugsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Drugs">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/Cestini/BLUE%20ICONS%20RECYCLE%20BIN%20FULL.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="procedures" contentDisplay="TOP" layoutX="104.0" layoutY="27.0" onAction="#loadProceduresWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: purple; -fx-text-fill: white;" text="Procedures">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/A%20BIT%20OF%20STARWARS/A%20BIT%20OF%20STARWARS%20BOBAFETT.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="services" contentDisplay="TOP" layoutX="54.0" layoutY="27.0" onAction="#loadServicesrsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: yellow; -fx-text-fill: black;" text="Services">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/DAZZLA%20DENT/DAZZLA%20DENT%20TEXTEDIT.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="equipments" contentDisplay="TOP" onAction="#loadEquipmentsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: orange; -fx-text-fill: white;" text="Equipments">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/Cestini/Clor%20Desktop%20Club%20Icon%2006.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="1000.0" maxWidth="10000.0" minWidth="0.0" prefHeight="135.0" prefWidth="600.0">
+               <children>
+                  <JFXButton fx:id="insurances" contentDisplay="TOP" onAction="#loadInsurancesWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: violet; -fx-text-fill: white;" text="Insurances">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBUTTONS%20V2/XBUTTONS%20V2%20WEB%202.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="patients" contentDisplay="TOP" onAction="#loadPatientsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Patients">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/REAL%20OSX/REAL%20OSX%20SYSTEM%20USER%20ICON.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="invoices" contentDisplay="TOP" layoutX="260.0" layoutY="11.0" onAction="#loadInvoicesWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: maroon; -fx-text-fill: white;" text="Invoices">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBUTTONS%20V2/XBUTTONS%20V2%20CHOCOLATE%20COVERED.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="receipts" contentDisplay="TOP" layoutX="210.0" layoutY="11.0" onAction="#loadReceiptsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: #00e676; -fx-text-fill: white;" text="Receipts">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBUTTONS%20V2/XBUTTONS%20V2%20SPLAT%202.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="refunds" contentDisplay="TOP" layoutX="310.0" layoutY="11.0" onAction="#loadRefundsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Payments">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBUTTONS%20V2/XBUTTONS%20V2%20FREEHAND.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="1000.0" maxWidth="10000.0" prefHeight="135.0" prefWidth="600.0">
+               <children>
+                  <JFXButton fx:id="spending" contentDisplay="TOP" layoutX="260.0" layoutY="11.0" onAction="#loadSpendingsWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: #795548; -fx-text-fill: white;" text="Expenses">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBULBS/XBULBS%20STRIPED%202.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="revenues" contentDisplay="TOP" layoutX="210.0" layoutY="11.0" onAction="#loadRevenuesWindow" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: #003300; -fx-text-fill: white;" text="Revenues">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/XBULBS/XBULBS%20GOLD.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox fx:id="bottom" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #201; -fx-text-fill: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="footerInfo" fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Optical Assistant Software">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox alignment="CENTER" prefHeight="418.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="edit" contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" onAction="#editUserSettings" prefHeight="48.0" prefWidth="42.0" style="-fx-background-color: #999;">
+               <graphic>
+                  <ImageView fx:id="viewUsers" fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/Temptation/Temptation%20pencil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <VBox alignment="CENTER" prefHeight="418.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="view" contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" onAction="#viewUserInfo" prefHeight="48.0" prefWidth="42.0" style="-fx-background-color: #999;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../pic/Nuove%20Png/ICON%20PACKS/Temptation/Temptation%20folder5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
